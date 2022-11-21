@@ -16,13 +16,244 @@
 		}
 		
 		#wrapper{
-			width : 1150px;
+			width : 1200px;
 			margin : 0px auto;
 		}
+		img{
+		width : 100%;
+		height : 100%;
+		}
+		#row111{
+			height: 200px;
+			border: 2px solid black;
+		}
+		#mark{
+			border: 2px solid black;
+		}
+		#search{
+			border: 2px solid black;
+		}
+		#cartIcon{
+			border: 2px solid black;
+		}
+		#userIcon{
+			border: 2px solid black;
+		}
+		#row222{
+			border: 2px solid blue;
+		}
+		.aBook{
+			border: 2px solid blue;
+			height: 250px;
+		}
+		.aBookImage{
+			border: 2px solid red;
+			width: 100px;
+			height: 240px;
+		}
+		.aBookInfo{
+			border: 2px solid red;
+		}
+		.firstLine, .secondLine, .thirdLine, .fourthLine {
+			border: 2px solid red;
+		
+		}
+		#cartIcon, #userIcon {
+			width:60px;
+			height:60px;
+			margin-top: 100px;
+		}
 	</style>
+	<script>
+		function mark(){
+			location.replace("http://localhost:8080/shopping/html/book/bookList2.html");
+		}
+		
+	</script>
+	<script src="https://kit.fontawesome.com/a4a088388f.js" crossorigin="anonymous"></script>
 		
 	</head>
 	<body>
-	
+		<div id="wrapper">
+			<div class="container-fluid border">
+				<div class="row" id="row111">
+					<div class="col-sm-3" id="mark">
+						<button onclick="mark()" class="btn btn-lg">
+							<img src="/shopping/imageOfbookList/교보문고로고.png"/>
+						</button>
+					</div>
+					<div class="col-sm-7 container" id="search">
+						<form action="/action_page.php">
+							<label for ="totalSearch"></label>
+							<input id="totalSearch" type="search" name="totalSearch"/>
+							<button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</form>
+					</div>
+					<div class="col-sm-1" id="cartIcon"><img src="/shopping/imageOfbookList/장바구니.png"></div>
+					<div class="col-sm-1" id="userIcon"><img src="/shopping/imageOfbookList/마이페이지.png"></div>
+				</div>
+				<div class="row"  id="row222">
+					<div class="col-sm-3 bg-warning" id="sideBar">
+						<div class="container mt-2">
+							<h3 class="font-weight-bold text-center">베스트 셀러</h3>
+							<ul class="list-group">
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">영미 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">프랑스 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">장르 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">청소년 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">일본 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">중국 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">러시아 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">독일 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">북유럽 소설</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">고전소설/문학</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">세계문학 전집</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">라이트 노벨</li></a>
+				                <a href = "#"><li class="text-center list-group-item list-group-item-action">기타나라 소설</li></a>
+		                	</ul>
+						
+						</div>
+					</div>
+					<div class="col-sm-9" id="bookList">
+						<div class="container-fluid">
+							<div class="row pager" style="width:100%; height:130px;"></div>
+							<div class="row aBook">
+								<div class="col-sm-3 aBookImage"><img src="/shopping/imageOfbookList/책이미지1.jpg" class="mx-auto d-block"></div>
+								<div class="col-sm-9 aBookInfo">
+									<div class="container-fluid">
+										<div class="row firstLine">
+											<div class="font-weight-bold P3" id="book_title">이상한 나라의 사각형</div>
+										</div>
+										<div class="row secondLine">
+											<div class="col">
+												<a href="#"><span>에드윈 애벗</span></a>
+												<span>·</span>
+												<span>경문사</span>
+												<span>·</span>
+												<span>2022.12.05 출시</span>
+											</div>
+										</div>
+										<div class="row thirdLine">
+											<div class="col writer">
+												<span>할인%</span>
+												<span>가격1</span>
+												<span>가격2</span>
+											</div>
+										</div>
+										<div class="row fourthLine">
+											<p class="col content">우리가 아는 한, 공간의 여러 차원을 인식하는 방법에 대해서 가장 잘 소개한 작품. … 단순히 기하학의 지식을 재치있고 재미있게 다룬 것이 아니라 우주와 우리 자신에 대해서 깊이 있는 사색을 담고</p>
+										</div>
+										<div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row aBook">
+								<div class="col-sm-4 aBookImage"><img src="/shopping/imageOfbookList/책이미지2.jpg" class="mx-auto d-block"></div>
+								<div class="col-sm-8 aBookInfo">
+									<div class="container-fluid">
+										<div class="row firstLine">
+											<div class="col-6" id="book_no">book_no</div>
+											<div class="col-6" id="book_title">book_title</div>
+										</div>
+										<div class="row secondLine">
+											<div class="col-4">출판사</div>
+											<div class="col-4">가격</div>
+											<div class="col-4">평점</div>
+										</div>
+										<div class="row thirdLine">
+											<div class="col writer">작가1</div>
+											<div class="col writer">작가2</div>
+										</div>
+										<div class="row fourthLine">
+											<div class="col hashTag">#1</div>
+											<div class="col hashTag">#2</div>
+											<div class="col hashTag">#3</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row aBook">
+								<div class="col-sm-4 aBookImage"><img src="/shopping/imageOfbookList/책이미지3.jpg" class="mx-auto d-block"></div>
+								<div class="col-sm-8 aBookInfo">
+									<div class="container-fluid">
+										<div class="row firstLine">
+											<div class="col-6" id="book_no">book_no</div>
+											<div class="col-6" id="book_title">book_title</div>
+										</div>
+										<div class="row secondLine">
+											<div class="col-4">출판사</div>
+											<div class="col-4">가격</div>
+											<div class="col-4">평점</div>
+										</div>
+										<div class="row thirdLine">
+											<div class="col writer">작가1</div>
+											<div class="col writer">작가2</div>
+										</div>
+										<div class="row fourthLine">
+											<div class="col hashTag">#1</div>
+											<div class="col hashTag">#2</div>
+											<div class="col hashTag">#3</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row aBook">
+								<div class="col-sm-4 aBookImage"><img src="/shopping/imageOfbookList/책이미지4.jpg" class="mx-auto d-block"></div>
+								<div class="col-sm-8 aBookInfo">
+									<div class="container-fluid">
+										<div class="row firstLine">
+											<div class="col-6" id="book_no">book_no</div>
+											<div class="col-6" id="book_title">book_title</div>
+										</div>
+										<div class="row secondLine">
+											<div class="col-4">출판사</div>
+											<div class="col-4">가격</div>
+											<div class="col-4">평점</div>
+										</div>
+										<div class="row thirdLine">
+											<div class="col writer">작가1</div>
+											<div class="col writer">작가2</div>
+										</div>
+										<div class="row fourthLine">
+											<div class="col hashTag">#1</div>
+											<div class="col hashTag">#2</div>
+											<div class="col hashTag">#3</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row aBook">
+								<div class="col-sm-4 aBookImage"><img src="/shopping/imageOfbookList/책이미지5.jpg" class="mx-auto d-block"></div>
+								<div class="col-sm-8 aBookInfo">
+									<div class="container-fluid">
+										<div class="row firstLine">
+											<div class="col-6" id="book_no">book_no</div>
+											<div class="col-6" id="book_title">book_title</div>
+										</div>
+										<div class="row secondLine">
+											<div class="col-4">출판사</div>
+											<div class="col-4">가격</div>
+											<div class="col-4">평점</div>
+										</div>
+										<div class="row thirdLine">
+											<div class="col writer">작가1</div>
+											<div class="col writer">작가2</div>
+										</div>
+										<div class="row fourthLine">
+											<div class="col hashTag">#1</div>
+											<div class="col hashTag">#2</div>
+											<div class="col hashTag">#3</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
