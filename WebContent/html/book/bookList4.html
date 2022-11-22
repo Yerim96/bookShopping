@@ -1,14 +1,215 @@
 <!DOCTYPE html>
 <html>
+     
 	<head>
 		<meta charset="UTF-8">
 		<title>Insert title here</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-	</head>
-	<body>
 		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	</head>
+	<style>
+	
+		*{
+			padding : 0px;
+			margin : 0px;
+			box-sizing: border-box;
+		}
+		
+		#wrapper{
+			width : 1150px;
+			margin : 0px auto;
+		}
+		
+		img {
+			width : 100%;
+			height : 100%;
+		}
+		#search {
+			text-align: center;
+			vertical-align : middle;
+		}
+		
+		li{
+			list-style: none;
+			float: left;
+			padding: 0 15px;
+		}
+		li::after{
+			content:"|";
+			float:right;
+			color:#ccc;
+			margin-right: -17px;
+		}
+		li:last-child::after{
+			content:"";
+		}
+		
+		
+	</style>
+
+	<body>
+		<div id = "wrapper">
+			<div class="container-fluid">
+				<div class="row justify-content-end">				
+					<div>
+						<ul>
+							<li><span style="font-size:4px"><a href="#"></a>로그인</span></li>
+							<li><span style="font-size:4px"><a href="#"></a>회원가입</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "container-fluid">
+				<div class = "row justify-content-center align-items-center">
+					<div class = "col-sm-3"><a href = "https://www.kyobobook.co.kr/"><img src = "/shopping/imageOfbookList/교보문고로고.png" class = "w-75 h-75"/></a></div>
+					<div class = "col-sm-5"><input type="text" class="form-control" placeholder="책제목/저자명/출판사/해시태그 검색"></div>
+					<div class = "col-sm-2"><button class = "btn btn-primary">검색</button></div>
+					<div class = "col-sm-1 pr-0"><a href = "https://order.kyobobook.co.kr/cart"><img src = "/shopping/imageOfbookList/장바구니.png" class = "rounded w-50 h-50"/></button></div>
+					<div class = "col-sm-1 pl-0"><a href = "https://my.kyobobook.co.kr/main"><img src = "/shopping/imageOfbookList/마이페이지.png" class = "rounded w-50 h-50"/></button></div>
+				</div>
+				<div class = "row justify-content-center">
+					<div class = "col-sm-3">
+						<h4 class = "text-center font-weight-bold mb-4">소설</h4>
+						<ul class="list-group">
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">영미 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">프랑스 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">장르 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">청소년 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">일본 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">중국 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">러시아 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">독일 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">북유럽 소설</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">고전소설/문학</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">세계문학 전집</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">라이트 노벨</li></a>
+							<a href = "#"><li class="text-center list-group-item list-group-item-action">기타나라 소설</li></a>
+						</ul>
+					</div>
+					<div class = "col-sm-9">
+						<div class = "container-fluid p-0">
+							<div class="row">
+                           
+		                        <div class="col-3 border">
+		                           <img src="/shopping/imageOfbookList/책이미지1.jpg" width = 100%/>
+		                        </div>
+		                        
+		                        <div class="col-9 mt-5">
+		                           <div><a href="bookDetail4.html" class="text-dark"><h4><b>이상한 나라의 사각형</b></h4></a></div>
+		                           <div><span style="font-size:13px;">에드윈 애벗 / 경문사 / 2022.12.05 출시</span></div>
+		                           <div>
+		                              <span style="font-size:13px; color:green;"><b>10%</b></span>
+		                              <span style="font-size:13px;"><b>9,000원</b></span>
+		                              <span style="font-size:11px;"><del>10,000원</del></span>
+		                           </div>
+		                           <div>
+		                              <span style="font-size:13px;">우리가 아는 한, 공간의 여러 차원을 인식하는 방법에 대해서 가장 잘 소개한 작품… 
+		                              단순히 기하학의 지식을 재치있고 재미있게 다룬 것이 아니라 우주와 우리 자신에 대해서 깊이 있는 사색을 담고...</span>
+		                           </div>
+		                        </div>
+		                     </div>
+		                     <hr/>
+		                  
+		                     <div class="row">
+		                           
+		                        <div class="col-3 border">
+		                           <img src="/shopping/imageOfbookList/책이미지2.jpg" width=100%/>
+		                        </div>
+		                        
+		                        <div class="col-9 mt-5">
+		                           <div><a href="https://product.kyobobook.co.kr/detail/S000200287398" class = "text-dark"><h4><b>줄라이, 줄라이</b></h4></a></div>
+		                           <div><span style="font-size:13px;">팀 오브라이언 / 섬과달 / 2022.11.30 출시</span></div>
+		                           <div>
+		                              <span style="font-size:13px; color:green;"><b>10%</b></span>
+		                              <span style="font-size:13px;"><b>14,400원</b></span>
+		                              <span style="font-size:11px;"><del>16,000원</del></span>
+		                           </div>
+		                           <div>
+		                              <span style="font-size:13px;">팀 오브라이언은 전미도서상, 제임스페니모어쿠퍼상, 데이턴평화문학상 등을 수상하고 “아마존 평생의 필독서 100권”, 
+		                              “[뉴욕 타임스] 20세기의 책”, 피터 박스올 『죽기 전에 꼭 읽어야 할 책 1001...</span>
+		                           </div>
+		                        </div>
+		                           
+		                     </div>
+		                     <hr/>
+		                     <div class="row">
+		                           
+		                        <div class="col-3 border">
+		                           <img src="/shopping/imageOfbookList/책이미지3.jpg" width=100%/>
+		                        </div>
+		                        
+		                        <div class="col-9 mt-5">
+		                           <div><a href="https://product.kyobobook.co.kr/detail/S000200284791" class="text-dark"><h4><b>댈러웨이 부인/등대로</b></h4></a></div>
+		                           <div><span style="font-size:13px;">버지니아 울프 / 동서문화사 / 2022.11.15 출시</span></div>
+		                           <div>
+		                              <span style="font-size:13px; color:green;"><b>10%</b></span>
+		                              <span style="font-size:13px;"><b>15,120원</b></span>
+		                              <span style="font-size:11px;"><del>16,800원</del></span>
+		                           </div>
+		                           <div>
+		                              <span style="font-size:13px;">버지니아 울프의 장편 《댈러웨이 부인 Mrs. Dalloway》은 ‘의식의 흐름’ 기법을 사용하여 삶의 다채롭고 불가사의한 신비를 잘 드러낸 작품이다. 
+		                              하원의원 댈러웨이의 부인 클래리사가 꽃을 사러 가...</span>
+		                           </div>
+		                        </div>
+		                           
+		                     </div>
+		                     <hr/>
+		                     <div class="row">
+		                           
+		                        <div class="col-3 border">
+		                           <img src="/shopping/imageOfbookList/책이미지4.jpg" width=100%/>
+		                        </div>
+		                        
+		                        <div class="col-9 mt-5">
+		                           <div><a href="https://product.kyobobook.co.kr/detail/S000200284773" class="text-dark"><h4><b>가든파티</b></h4></a></div>
+		                           <div><span style="font-size:13px;">캐서린 맨스필드/ 동서문화사 / 2022.11.15 출시</span></div>
+		                           <div>
+		                              <span style="font-size:13px; color:green;"><b>10%</b></span>
+		                              <span style="font-size:13px;"><b>15,120원</b></span>
+		                              <span style="font-size:11px;"><del>16,800원</del></span>
+		                           </div>
+		                           <div>
+		                              <span style="font-size:13px;">캐서린 맨스필드는 1888년 뉴질랜드의 수도 웰링턴에서 태어났다. 부유한 가정에서 평화로운 소녀 시절을 보냈던 그녀는 어린 시절부터 시나 산문을 읽고, 또 글쓰기를 즐겼다. 
+		                              1903년 영국 런던으로...</span>
+		                           </div>
+		                        </div>
+		                           
+		                     </div>
+		                     <hr/>
+		                     <div class="row">
+		                           
+		                        <div class="col-3 border">
+		                           <img src="/shopping/imageOfbookList/책이미지5.jpg" width=100%/>
+		                        </div>
+		                        
+		                        <div class="col-9 mt-5">
+		                           <div><a href="https://product.kyobobook.co.kr/detail/S000200284732" class="text-dark"><h4><b>뉴잉글랜드 수녀</b></h4></a></div>
+		                           <div><span style="font-size:13px;">메리 E.윌킨스 프리먼 / 동서문화사 / 2022.11.01 출시</span></div>
+		                           <div>
+		                              <span style="font-size:13px; color:green;"><b>10%</b></span>
+		                              <span style="font-size:13px;"><b>16,920원</b></span>
+		                              <span style="font-size:11px;"><del>18,800원</del></span>
+		                           </div>
+		                           <div>
+		                              <span style="font-size:13px;">동서문화사가 고전 페미니즘 미네르바 시리즈를 새롭게 펴내면서 그 첫 번째 권으로 미국 소설가 
+		                              메리 엘리너 윌킨스 프리먼(Mary Eleanor Wilkins Freeman, 1852~1930)의 단편집 《뉴잉글랜드...</span>
+		                           </div>
+		                        </div>
+		                           
+		                     </div>
+		                     <hr/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
