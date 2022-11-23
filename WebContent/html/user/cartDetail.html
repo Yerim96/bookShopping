@@ -35,26 +35,6 @@
 	         	zoom : 2.0;
 	         }
 		</style>
-		<script>
-			function allCheck(){
-				let boxes = $(".item > input[type = checkbox]");
-				boolean isAllChecked = true;
-				for(let i = 0; i < boxes.length; i++){
-					if(!$(boxes[i]).is(":checked"){
-						isAllChecked = false;
-						console.log(i);
-						break;
-					}
-				}
-				
-				if(isAllChecked){
-					$("input[type = checkbox]").attr("checked", false);
-				}else{
-					$("input[type = checkbox]").attr("checked", true);
-				}
-				
-			}
-		</script>
 	</head>
 	<body>
 		<div id = "wrapper">
@@ -350,5 +330,19 @@
 
 			</div>
 		</div>
+		<script>
+			function allCheck(){
+				let allLen = $(".item input[type = checkbox]").length;
+				let checkedLen = $(".item input[type = checkbox]:checked").length;
+				
+				if(0 <= checkedLen && checkedLen < allLen){
+					$("input[type = checkbox]").prop("checked", true);
+				}else{
+					$("input[type = checkbox]").prop("checked", false);
+				}
+					
+				
+			}
+		</script>
 	</body>
 </html>
