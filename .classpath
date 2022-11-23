@@ -8,9 +8,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="WebContent/META-INF/lib/json-20220924.jar"/>
-	<classpathentry kind="lib" path="WebContent/META-INF/lib/lombok.jar"/>
-	<classpathentry kind="lib" path="WebContent/META-INF/lib/ojdbc8-19.12.0.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
